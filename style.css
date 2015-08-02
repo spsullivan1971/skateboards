@@ -227,3 +227,164 @@ tr {
   vertical-align: top;
   padding: 20px;
 }
+
+.bio-blocks {
+  display: inline-block;
+  margin-top: 3vmax;
+  width: 100%;
+  height: 300px;
+}
+
+.skaters {
+  width: 100%;
+  height: 100%;
+}
+
+.lance-rodney {
+  height: 49%;
+  display: inline-block;
+}
+
+.lance-rodney-steve {
+  display: inline-block;
+  width: 66%;
+  height: 100%;
+  float: left;
+
+
+}
+
+.lance {
+  background: url(images/sk8er-4.png) no-repeat;
+  background-size: cover;
+  width: 48.5%;
+  border: 3px solid white;
+  display: flex;
+  height:100%;
+  float: left;
+  align-items: center;
+  justify-content: center;
+}
+
+.lance-background {
+  background-size: cover;
+}
+
+.lance-background p:hover {
+  opacity: .1;
+  align-items: center;
+  justify-content: center;
+}
+
+.lance p {
+font-size: 2.6vmax;
+font-weight: bolder;
+color: white;
+}
+
+.rodney {
+  background: url(images/sk8er-3.png);
+  background-size: cover;
+  width: 48.5%;
+  height: 100%;
+  border: 3px solid white;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rodney-background p:hover {
+  opacity: .1;
+}
+
+.rodney p {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2.6vmax;
+  font-weight: bolder;
+  color: white;
+}
+
+.steve {
+  background: url(images/sk8er-1.png);
+  background-size: cover;
+  width: 100%;
+  height: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+}
+
+.steve-background p:hover {
+  opacity: .1;
+}
+
+.steve p {
+  text-align:center;
+  font-size: 2.5vmax;
+  font-weight: bolder;
+  color: white;
+  border-top: .5%;
+}
+
+.tommy {
+  background: url(images/sk8er-2.png) no-repeat;
+  background-size: cover;
+  background-position: 80%;
+  width: 32%;
+  height: 100%;
+  border: 3px solid white;
+  float: right;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tommy-background p:hover {
+  opacity: .1;
+}
+
+
+.tommy p {
+  text-align: center;
+  font-size: 2.6vmax;
+  font-weight: bolder;
+  color: white;
+  height: 100%;
+}
+
+.skate-boards {
+  background-color: white;
+  display: inline-block;
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 7%;
+
+}
+
+.skate-boards img {
+  margin: 1%;
+  display: inline-block;
+
+}
+
+
+
+.photo-banner {
+  height: 233px;
+  width: 100%;
+  margin-bottom: 80px;
+
+}
+
+.first-board {
+    -webkit-animation: bannermove 10s linear infinite;
+       -moz-animation: bannermove 10s linear infinite;
+        -ms-animation: bannermove 10s linear infinite;
+         -o-animation: bannermove 10s linear infinite;
+            animation: bannermove 10s linear infinite;
+}
