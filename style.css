@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe,
+/*html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -22,7 +22,7 @@ HTML5 display-role reset for older browsers
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
-}
+}*/
 
 html {
   background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url('images/bg.jpg');
@@ -354,7 +354,7 @@ max-width: 100%;
   display: inline-block;
   margin-top: 16px;
   width: 97%;
-  height: 300px;
+  height: 350px;
 }
 
 .skaters {
@@ -367,13 +367,14 @@ max-width: 100%;
 
 .lance-rodney {
   margin-bottom: 10px;
+	width: 100%;
   height: 49%;
   display: inline-block;
 }
 
 .lance-rodney-steve {
   display: inline-block;
-  width: 66%;
+  width: 69%;
   height: 100%;
   float: left;
 
@@ -382,7 +383,8 @@ max-width: 100%;
 
 .lance {
   background: url(images/sk8er-4.png);
-  background-size: cover;
+  background-size: 110%;
+	background-position: 100%;
   width: 48.5%;
   border: 3px solid white;
   display: flex;
@@ -393,7 +395,7 @@ max-width: 100%;
 }
 
 .lance-background {
-  background-size: cover;
+  background-size: 103%;
 }
 
 .lance-background p:hover {
@@ -403,14 +405,14 @@ max-width: 100%;
 }
 
 .lance p {
-font-size: 2.6vmax;
+font-size: 2em;
 font-weight: bolder;
 color: white;
 }
 
 .rodney {
   background: url(images/sk8er-3.png);
-  background-size: cover;
+  background-size: 110%;
   width: 48.5%;
   height: 100%;
   border: 3px solid white;
@@ -427,14 +429,16 @@ color: white;
 .rodney p {
   text-align: center;
   vertical-align: middle;
-  font-size: 2.6vmax;
+  font-size: 2em;
   font-weight: bolder;
   color: white;
 }
 
 .steve {
   background: url(images/sk8er-1.png);
-  background-size: cover;
+	background-repeat: no-repeat;
+  background-size: 100%;
+	background-position: 100%;
   width: 99%;
   height: 46.5%;
   display: flex;
@@ -449,7 +453,7 @@ color: white;
 
 .steve p {
   text-align:center;
-  font-size: 2.5vmax;
+  font-size: 2em;
   font-weight: bolder;
   color: white;
   border-top: .5%;
@@ -457,9 +461,9 @@ color: white;
 
 .tommy {
   background: url(images/sk8er-2.png) no-repeat;
-  background-size: cover;
-  background-position: 80%;
-  width: 32%;
+  background-size: 221%;
+  background-position: 76%;
+  width: 29%;
   height: 100%;
   border: 3px solid white;
   float: right;
@@ -475,7 +479,7 @@ color: white;
 
 .tommy p {
   text-align: center;
-  font-size: 2.6vmax;
+  font-size: 2em;
   font-weight: bolder;
   color: white;
   height: 100%;
@@ -534,6 +538,96 @@ color: white;
   justify-content: space-around;
 
 }
+
+.footer{
+  width: 98%;
+  background-color: white;
+  text-align: left;
+  margin-bottom: 100px;
+  display: inline-block;
+  -webkit-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  -moz-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+}
+
+.contact-usleft{
+  width: 42%;
+  color: #000;
+  margin: 1% 1% 1% 3%;
+  display: inline-block;
+  float: left;
+}
+
+.contact-usleft h3{
+  color: black;
+  font-weight: normal;
+}
+
+.contact-usleft ul{
+  float:none;
+  color: black;
+  padding: 0;
+  display: inline-flex;
+  margin-top: 0;
+}
+
+.contact-usleft li{
+	color: #929090;
+  margin: 5px;
+  padding: 5px;
+}
+
+.contact-usright{
+  width: 42%;
+  color: #000;
+  margin: 1% 1% 1% 11%;
+  display: inline-block;
+  float: left;
+}
+
+.field-one{
+  border: solid 2px;
+  border-color: grey;
+  padding: 2%;
+}
+
+.field-two{
+  border: solid 2px;
+  border-color: grey;
+  padding: 2%;
+}
+
+.entryMessage{
+  border:solid 2px;
+  border-color: grey;
+  padding: 2% 2% 20% 2%;
+}
+
+.submitButton{
+  background-color: #fff;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  float: right;
+  width: 33%;
+  padding: 2% 5% 2% 5%;
+}
+
+.submitButton img {
+	width:89%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	text-align: center;
+}
+
+.submitButton:hover{
+  background-color: white;
+  color: #B4292E;
+  font-weight: bold;
+  border: solid 2px;
+  border-color: #B4292E;
+}
+
 
 
 
