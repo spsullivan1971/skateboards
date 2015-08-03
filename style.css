@@ -1,3 +1,29 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
 html {
   background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url('images/bg.jpg');
   -webkit-background-size: cover;
@@ -16,7 +42,7 @@ body {
   margin-bottom: 10%;
 }
 table {
-  border-spacing: 7px 0px;
+  border-spacing: 4px 0px;
 border-collapse: separate;
 vertical-align: top;
 }
@@ -25,7 +51,7 @@ vertical-align: top;
 
 .mainPage {
   width: 60%;
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
   font-family: 'Lato', sans-serif;
 }
@@ -34,44 +60,59 @@ vertical-align: top;
   max-width: 100%;
 }*/
 
-.header {
-  display: inline-block;
+#header {
+    display: inline-block;
+    margin-top: 3px;
+    width: 100%;
+}
+
+.sunscribe {
   width: 100%;
 }
 
-.header h3 {
-  position: relative;
+.subscribe ul {
   display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  top: 100%;
-  transform: translateY(25%);
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size: 1em;
+  margin-left: 20%;
 }
 
-ul, li {
+.social {
+  display: inline-block;
+  widows: 23%;
+
+}
+
+.social li {
+  display: inline-block;
+  margin-left: 50%;
+}
+
+.header h3 {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    top: 100%;
+    transform: translateY(25%);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1em;
+}
+
+  ul, li {
+  display: inline-flex;
+  justify-content: space-between;
   position: relative;
   /*width: 30%;*/
-  float: left;
-  list-style-type: none;
 }
 
-li {
-  -webkit-box-shadow: 0px 10px 7px -4px rgba(68,68,68,0.75);
-  -moz-box-shadow: 0px 10px 7px -4px rgba(68,68,68,0.75);
-  box-shadow: 0px 10px 7px -4px rgba(68,68,68,0.75);
-}
+/*ul {
 
-ul {
-    display: inline-flex;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     -webkit-padding-start: 340px;
-}
+}*/
 
 
 .btn-success {
@@ -96,8 +137,9 @@ ul {
   }
 .navbar ul {
       text-align: center;
+      justify-content: flex-start;
       width: 100%;
-      display: inline-block;
+      /*display: inline-block;*/
       padding: 0px;
       margin: 0px;
     }
@@ -113,6 +155,9 @@ ul {
         position: relative;
         top: 0px;
         height: auto;
+        -webkit-box-shadow: 0px 10px 7px -4px rgba(68,68,68,0.75);
+        -moz-box-shadow: 0px 10px 7px -4px rgba(68,68,68,0.75);
+        box-shadow: 0px 10px 7px -4px rgba(68,68,68,0.75);
       }
 .navbar li:hover {
      background-color: rgba(224, 203, 82, 0.70);
@@ -124,8 +169,6 @@ ul {
 max-width: 100%;
 
 }
-
-
 .slideshow {
   background-image: url('images/top-image.png');
   background-repeat: no-repeat;
@@ -157,10 +200,12 @@ max-width: 100%;
   opacity: 1;
   }
 
-  #slideNav {
+  .slideNav {
     display:inline-block;
     width: 53%;
-    margin-left: -28%;
+    /*margin-top: 2%;
+		margin-bottom: 2%;*/
+    margin-left: 0%;
   }
   .slideshowBtn{
     position: relative;
@@ -194,53 +239,134 @@ max-width: 100%;
      }
 
 /*------article styling -------*/
-#maintable {
+.news {
   width: 100%;
-
 }
 
-tbody {
-  display: inline-block;
-  width: 100%;
-  vertical-align: top;
+.article {
+	display: flex;
+	justify-content: space-between;
+	width: 98%;
+	margin-left: 7px;
 }
 
-tr {
-  display: inline-block;
-}
 
-.one {
+.article-one {
   width: 28%;
-  background-color: #000;
+  background-color: #fff;
   vertical-align: top;
   padding: 20px;
 }
-.two {
+
+.article-one h2 {
+  margin-top: 2%;
+  font-size: 20px;
+  color: #000;
+  text-align: left;
+}
+
+.article-one h4 {
+	margin-top: 4%;
+	margin-bottom: 4%;
+  font-size: 10px;
+  color: #B9B9B9;
+  text-align: left;
+}
+
+.article-one p {
+	margin-bottom: 14px;
+  color: #000;
+  text-align: left;
+  font-size: .75em;
+}
+
+.article-one img {
   width: 28%;
-  background-color: #000;
+  text-align: center;
+}
+
+.article-two {
+  width: 28%;
+  background-color: #fff;
   vertical-align: top;
   padding: 20px;
 }
-.three {
+.article-two img {
   width: 28%;
-  background-color: #000;
+  text-align: center;
+}
+.article-two h2 {
+  margin-top: 2%;
+  font-size: 20px;
+  color: #000;
+  text-align: left;
+}
+
+.article-two h4 {
+	margin-top: 4%;
+	margin-bottom: 4%;
+  font-size: 10px;
+  color: #B9B9B9;
+  text-align: left;
+}
+
+.article-two p {
+  color: #000;
+  text-align: left;
+  font-size: .75em;
+}
+
+.article-three {
+  width: 28%;
+  background-color: #fff;
   vertical-align: top;
   padding: 20px;
 }
+.article-three img {
+  width: 28%;
+  text-align: center;
+}
+.article-three h2 {
+  margin-top: 2%;
+  font-size: 20px;
+  color: #000;
+  text-align: left;
+}
+
+.article-three h4 {
+	margin-top: 4%;
+	margin-bottom: 4%;
+  font-size: 10px;
+  color: #B9B9B9;
+  text-align: left;
+}
+
+.article-three p {
+	margin-bottom: 14px;
+  color: #000;
+  text-align: left;
+  font-size: .75em;
+}
+
+/*--------------Bio Section--------------*/
 
 .bio-blocks {
   display: inline-block;
-  margin-top: 3vmax;
-  width: 100%;
+  margin-top: 16px;
+  width: 97%;
   height: 300px;
 }
 
 .skaters {
-  width: 100%;
+  display: flex;
+  width: 101.2%;
   height: 100%;
+  margin-left: -6px;
+  justify-content: space-between;
 }
 
 .lance-rodney {
+  margin-bottom: 10px;
   height: 49%;
   display: inline-block;
 }
@@ -255,7 +381,7 @@ tr {
 }
 
 .lance {
-  background: url(images/sk8er-4.png) no-repeat;
+  background: url(images/sk8er-4.png);
   background-size: cover;
   width: 48.5%;
   border: 3px solid white;
@@ -309,8 +435,8 @@ color: white;
 .steve {
   background: url(images/sk8er-1.png);
   background-size: cover;
-  width: 100%;
-  height: 49%;
+  width: 99%;
+  height: 46.5%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -338,7 +464,6 @@ color: white;
   border: 3px solid white;
   float: right;
   display: flex;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -356,35 +481,106 @@ color: white;
   height: 100%;
 }
 
-.skate-boards {
+.skateboards{
+  display: inline-block;
+  width: 97.80%;
   background-color: white;
+  margin-top: 2%;
+}
+
+.skateboards img {
+  width: 6%;
+  margin: 1% 1% 1% 1.655%;
+  vertical-align: middle;
+
+}
+
+.footer {
   display: inline-block;
-  width:100%;
-  height: 100%;
-  overflow: hidden;
-  margin-top: 7%;
+	margin-top: 10px;
+  width: 98%;
+}
+
+.flex-container {
+	width: 100%;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.flex-item {
+  background: #fff;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  margin-right: 10px;
+
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  justify-content: space-around;
 
 }
 
-.skate-boards img {
-  margin: 1%;
-  display: inline-block;
+
+
+
+
+
+/*.aside-one {
+	display: inline-block;
+	width: 100%;
+	background-color: #fff;
+}
+
+.contact-us {
+	margin-left: 10px;
+	text-align: left;
+	width: 50%;
+	background-color: #fff;
+}
+
+.contact-us img {
+  width: 5%;
+  text-align: center;
+}
+.contact-us h3 {
+  margin-top: 2%;
+  font-size: 1em;
+  color: #000;
+  text-align: left;
+}
+
+.contact-us p {
+	margin-bottom: 14px;
+  color: #000;
+  text-align: left;
+  font-size: 10px;
+}
+
+.aside-two {
+	display: inline-block;
+	width: 100%;
+	background-color: #fff;
 
 }
 
-
-
-.photo-banner {
-  height: 233px;
-  width: 100%;
-  margin-bottom: 80px;
-
-}
-
-.first-board {
-    -webkit-animation: bannermove 10s linear infinite;
-       -moz-animation: bannermove 10s linear infinite;
-        -ms-animation: bannermove 10s linear infinite;
-         -o-animation: bannermove 10s linear infinite;
-            animation: bannermove 10s linear infinite;
+.form-entry {
+	display: inline-block;
+	width: 50%;
+	margin-left: 50%;
+	margin-top: 0%;
 }
